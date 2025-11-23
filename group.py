@@ -1,7 +1,3 @@
-"""An example of how to represent a group of acquaintances in Python."""
-
-# Your code to go here...
-
 group = {
     "Jill": {
         "age": 26,
@@ -55,5 +51,5 @@ def friend_max_age(group):
     return max_age_friend
 print(friend_max_age(group))
 
-
+ 
 
