@@ -1,3 +1,4 @@
+import json
 group = {
     "Jill": {
         "age": 26,
@@ -51,5 +52,6 @@ def friend_max_age(group):
     return max_age_friend
 print(friend_max_age(group))
 
- 
-
+json_string = json.dumps(group, indent=4, sort_keys=True)
+with open('my_file.json', 'w') as f:
+    f.write(json_string)
